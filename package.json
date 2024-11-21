@@ -1,0 +1,22 @@
+{
+  "name": "bets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node index.js",
+    "test:gnoce": "node index.js  --base-url  https://www.gnoce.com/bracelets.html --last-page 10",
+    "test:pandora": "node index.js --custom-file-name charm --base-url https://au.pandora.net/on/demandware.store/Sites-en-AU-Site/en_AU/Search-UpdateGrid?cgid=jewellery&pmid=EarlyAccessNewArrivals&pmpt=qualifying&prefn1=primaryCategory&prefv1=Charms&start=36&sz=36&selectedUrl=https://au.pandora.net/on/demandware.store/Sites-en-AU-Site/en_AU/Search-UpdateGrid?cgid=jewellery&pmid=EarlyAccessNewArrivals&pmpt=qualifying&prefn1=primaryCategory&prefv1=Charms"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.5",
+    "cheerio": "^1.0.0-rc.12",
+    "csv-writer": "^1.6.0",
+    "papaparse": "^5.4.1",
+    "puppeteer": "^23.5.1"
+  }
+}
